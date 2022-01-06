@@ -4,7 +4,7 @@ import { useSession } from 'next-auth/react'
 import { EmojiHappyIcon, CameraIcon, VideoCameraIcon } from '@heroicons/react/solid'
 import { useRef, useState } from 'react'
 import { collection, addDoc, serverTimestamp, setDoc, doc } from 'firebase/firestore'
-import { ref, uploadBytesResumable, getDownloadURL, uploadString } from 'firebase/storage'
+import { ref, getDownloadURL, uploadString } from 'firebase/storage'
 import { db, storage } from '../firebase/clientApp'
 
 function InputBox() {
